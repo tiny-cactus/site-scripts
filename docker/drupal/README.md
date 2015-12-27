@@ -4,14 +4,18 @@ A docker-compose stack with an Apache and MySQL server running Drupal 8.
 
 # First Time
 
+The default password (set in `docker-compose.yml` ) is: `Passw0rd`  
+You should change this before running the `rebuild-lamp-stack.sh` script.  
+  
+The default port for the web server is: `2080`  
+You can set this to any unused port before starting a new Drupal stack.  
+  
 To set up the stack for the first time, or destroy the current stack and set up a fresh install of drupal, run the script:  
 ```
 $ bash ./rebuild-lamp-stack.sh
 ```  
 Then open firefox and browse to the setup page to finish the install.  
 All the required details will be printed by the script when it runs.  
-  
-The default password (set in docker-compose.yml) is: `Passw0rd`
   
 # Starting and Stopping
 
